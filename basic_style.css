@@ -1,8 +1,15 @@
 body {
   margin: 0;
-  font-family: "Noto Sans SC", "PingFang SC", sans-serif;
   line-height: 1.8;
   color: white;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Times New Roman"
+    "SimSun"
+    "Hiragino Sans"
+    Arial,
+    sans-serif;
 
   background:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
