@@ -1,1 +1,39 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
 
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("Futaba.Tsukushi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content-box {
+  background-color: rgba(0,0,0,0.25);
+  padding: 20px;
+  margin: 30px;
+  border-radius: 12px;
+  color: white
+}
+
+.content-box p {
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  color: white;
+  padding: 20px;
+}
+            
+a{
+  color: #21579f;
+  text-decoration: none;
+}
+
+            a:hover {
+                text-decoration: none;
+            }
