@@ -3,11 +3,11 @@ body {
   line-height: 1.8;
   color: white;
   font-family:
+    "Times New Roman",
+    "SimSun",
+    "Hiragino Sans",
     -apple-system,
     BlinkMacSystemFont,
-    "Times New Roman"
-    "SimSun"
-    "Hiragino Sans"
     Arial,
     sans-serif;
 
