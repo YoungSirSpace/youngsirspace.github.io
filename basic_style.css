@@ -20,7 +20,7 @@ body {
 }
 
 @font-face {
-  font-family: "MySerof";
+  font-family: "MySerif";
   src: url("/fonts/cjk-sc.woff2") format("woff2");
   unicode-range: U+4EOO-9FFF;
 }
@@ -37,13 +37,13 @@ body {
 }
 
 .site-logo {
-  font-siza: 1.2rem;
-  font-weight: blod;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-decoration: none;
   color: inherit;
 }
 
-.site-logo: hover {
+.site-logo:hover {
   opacity: 0.8;
 }
 
