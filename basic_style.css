@@ -4,13 +4,7 @@ body {
   line-height: 1.8;
   color: white;
   font-family: "MySerif", serif;
-
-  background:
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("Futaba.Tsukushi.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: none;
 }
 
 @font-face {
@@ -172,4 +166,17 @@ a:hover {
     line-height: 1.6;
     text-indent: 1.6em;
   }
+}
+
+.bg-fixed {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("Futaba.Tsukushi.jpg");
+  
+  background-size: cover;
+  background-position: center;
 }
