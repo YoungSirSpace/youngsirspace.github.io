@@ -119,22 +119,26 @@ a:hover {
 }
 
 .post-title {
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(2rem, 5vw, 2.8rem);
   text-align: center;
   margin: 3rem 0 2.5rem;
 }
 
 .post-content p {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   margin: 0 0 1.4em 0;
   text-indent: 2em;
 }
 
 @media (max-width: 600px) {
+  .post-title {
+    font-size: 2.2rem;
+  }
+  
   .post-content p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
     text-indent: 1.6em;
   }
 }
