@@ -49,7 +49,7 @@ body {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 
-  transition:
+  transition: all 0.4s cubic-bezier(.4,0,.2,1);
     background-color 0.3s ease,
     backdrop-filter 0.3s ease,
     box-shadow 0.3s ease;
