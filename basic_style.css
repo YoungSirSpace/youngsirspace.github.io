@@ -175,7 +175,7 @@ a:hover {
 
   background:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("Futaba.Tsukushi.jpg");
+    url("/Futaba.Tsukushi.jpg");
   
   background-size: cover;
   background-position: center;
