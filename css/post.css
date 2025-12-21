@@ -65,11 +65,10 @@
 }
 
 .post-card {
-  padding: 1.4rem 1.8rem;
-
-  max-width: 750px;
-  margin: 0 auto;
-
+  max-width: 800px;
+  width: calc(100% - 32px);
+  margin: 40px auto;
+  padding: 24px;
   transition: background 0.2s ease;
 }
 
@@ -89,7 +88,7 @@
 }
 
 .post-title a:hover {
-  color: #8ab4f8;
+  color: #6965c9;
   text-decoration: none;
 }
 
