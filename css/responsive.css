@@ -9,3 +9,57 @@
     text-indent: 1.6em;
   }
 }
+
+.page-layout {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 32px;
+
+  align-items: start;
+}
+
+.main-column {
+  min-width: 0;
+}
+
+.sidebar {
+  position: sticky;
+  top: 32px;
+  align-self: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar .glass-box {
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #6965c9;
+}
+
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}
