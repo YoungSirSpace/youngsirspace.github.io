@@ -105,3 +105,29 @@
   line-height: 1.7;
   color: #aaa;
 }
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+
+  align-items: start;
+}
+
+.sidebar {
+  position: sticky;
+  top: 24px;
+
+  align-self: start;
+}
+
+.sidebar > section {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
