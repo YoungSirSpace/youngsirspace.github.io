@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "MySerif";
+  src: url("/fonts/latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF;
+}
+
+@font-face {
+  font-family: "MySerif";
+  src: url("/fonts/cjk-sc.woff2") format("woff2");
+  unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+  font-family: "MySerif";
+  src: url("/fonts/cjk-jp.woff2") format("woff2");
+  unicode-range: U+3040-30FF;
+}
