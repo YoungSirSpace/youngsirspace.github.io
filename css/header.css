@@ -1,0 +1,35 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 64px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 1000;
+
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.site-header.scrolled {
+  background-color: rgba(0,0,0,0.35);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.site-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
