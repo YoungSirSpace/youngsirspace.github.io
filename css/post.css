@@ -15,25 +15,11 @@
 }
 
 .post-list-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.post-list-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-color: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-
-  border-radius: 12px;
+  max-width: 800px;
+  width: calc(100% - 32px);
+  margin: 0 auto 40px;
   padding: 28px 24px;
-
-  z-index: 0;
 }
-
 
 .post {
   max-width: 720px;
@@ -87,30 +73,18 @@
 
 .post-card {
   padding: 1.2rem 1.6rem;
-  border-radius: 10px;
 
-  position: relative;
-  z-index: 1;
-
-  background: transparent;
-
-  transition:
-    background-color 0.25s ease,
-    backdrop-filter 0.25s ease;
+  background-image: url("/Futaba.Tsukushi.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+  transition: background 0.2s ease;
 }
-
 
 .post-card:hover {
-  background-color: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-}
-
-.post-list-box::before {
-  mask:
-    linear-gradient(#000 0 0);
-  -webkit-mask:
-    linear-gradient(#000 0 0);
 }
 
 .post-title {
