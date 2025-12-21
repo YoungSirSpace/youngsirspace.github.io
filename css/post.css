@@ -74,50 +74,15 @@
 .post-card {
   padding: 1.2rem 1.6rem;
 
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  
+  transition: background 0.2s ease;
 }
 
-.post-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-
-  pointer-events: none;
-  z-index: 0;
+.post-card:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
-
-.post-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: url("/Futaba.Tsukushi.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-  transform: translateZ(0);
-  will-change: transform;
-
-  z-index: 0;
-}
-
-
-.post-card > * {
-  position: relative;
-  z-index: 1;
-}
-
-.post-card:hover::before {
-  backdrop-filter: blur(4px);
-}
-
 
 .post-title {
   font-size: 1.4rem;
