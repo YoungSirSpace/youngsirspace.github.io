@@ -74,14 +74,14 @@
 .post-card {
   padding: 1.2rem 1.6rem;
 
-  background-color: rgba(0, 0, 0, 0.18);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   
   transition: background 0.2s ease;
 }
 
 .post-card:hover {
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .post-title {
