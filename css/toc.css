@@ -1,0 +1,22 @@
+.toc-box nav {
+  font-size: 0.85rem;
+}
+
+.toc-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-box li {
+  margin: 0.3rem 0;
+}
+
+.toc-box a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.toc-box a.active {
+  color: #6965c9;
+  font-weight: 500;
+}
