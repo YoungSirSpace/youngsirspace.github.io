@@ -6,9 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const facebook = document.getElementById("share-facebook");
 
   if (twitter) {
-    twitter.href = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
+    twitter.href =
+      `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
   }
+
   if (facebook) {
-    facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+    facebook.href =
+      `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
   }
 });
