@@ -2,14 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("siteHeader");
   if (!header) return;
 
-  const scrollContainer = document.querySelector(".post-content") || window;
+  const mainColumn = document.querySelector(".main-column");
 
-  scrollContainer.addEventListener("scroll", () => {
-    const scrollY = scrollContainer === window
+  const scrollTarget = mainColumn || window;
+
+  const getScrollTop = () => {
+    return scrollTarget === window
       ? window.scrollY
-      : scrollContainer.scrollTop;
+      : scrollTarget.scrollTop;
+  };
 
-    if (scrollY > 100) {
+  scrollTarget.addEventListener("scroll", () => {
+    if (getScrollTop() > 100) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
