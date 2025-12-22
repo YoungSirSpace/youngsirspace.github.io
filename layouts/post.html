@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{TITLE}} | YoungSirSpace</title>
+  <title id="page-title">YoungSirSpace</title>
 
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/base.css">
@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <div class="bg-fixed"></div>
 
+  <div class="bg-fixed"></div>
   <header class="site-header" id="siteHeader">
     <a href="/" class="site-logo">YoungSirSpace</a>
   </header>
@@ -25,39 +25,93 @@
   <main class="page-layout">
 
     <div class="main-column">
-      {{CONTENT}}
+
+      <div class="content-box glass-box" id="article-container">
+      </div>
+
     </div>
 
     <aside class="sidebar">
+
       <div class="glass-box profile-card">
         <div class="avatar-wrapper">
-          <img src="/assets/avatar.jpg">
+          <img src="/togawa_sakiko.png" alt="Avatar">
         </div>
         <h2>YoungSirSpace</h2>
         <p class="profile-desc">Trying to polish this website.</p>
+
+        <div class="links-list">
+          <p><a href="https://x.com/young1984_2007">X / Twitter</a></p>
+          <p><a href="https://github.com/YoungSirSpace">GitHub</a></p>
+        </div>
       </div>
 
       <div class="glass-box toc-box">
         <h2>Contents</h2>
         <nav id="toc"></nav>
       </div>
+
     </aside>
 
   </main>
-
+  
   <script>
-  const params = new URLSearchParams(location.search);
-  const post = params.get("post");
+    const urlParams = new URLSearchParams(location.search);
+    const post = urlParams.get("post") || "";
+    if (post) {
+      fetch(`/posts/${post}.html`)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("article-container").innerHTML = html;
+          const titleElem = document.querySelector("#article-container .post-title");
+          if (titleElem) {
+            document.title = titleElem.innerText + " | YoungSirSpace";
+            document.getElementById("page-title").innerText = document.title;
+          }
 
-  if (post) {
-    fetch(`/posts/${post}.html`)
-      .then(res => res.text())
-      .then(html => {
-        document.querySelector(".main-column").innerHTML = html;
+          initTOC();
+        });
+    }
+    
+    function initTOC() {
+      const toc = document.getElementById("toc");
+      const content = document.getElementById("article-container");
+      if (!toc || !content) return;
+
+      const headers = content.querySelectorAll("h2, h3");
+      if (!headers.length) {
+        toc.innerHTML = "<p style='color:#888;font-size:0.9rem;'>No content outline</p>";
+        return;
+      }
+
+      const ul = document.createElement("ul");
+      headers.forEach((h, i) => {
+        if (!h.id) h.id = "heading-" + i;
+        const li = document.createElement("li");
+        li.classList.add(h.tagName.toLowerCase());
+
+        const a = document.createElement("a");
+        a.href = "#" + h.id;
+        a.textContent = h.textContent;
+
+        li.appendChild(a);
+        ul.appendChild(li);
       });
-  }
-</script>
+      toc.appendChild(ul);
 
-  <script src="/javascript/toc.js"></script>
+      window.addEventListener("scroll", () => {
+        let current;
+        headers.forEach(h => {
+          if (h.getBoundingClientRect().top < 140) {
+            current = h.id;
+          }
+        });
+        toc.querySelectorAll("a").forEach(a => {
+          a.classList.toggle("active", a.getAttribute("href") === "#" + current);
+        });
+      });
+    }
+  </script>
+
 </body>
 </html>
