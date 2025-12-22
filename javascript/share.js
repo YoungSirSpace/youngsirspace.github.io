@@ -6,20 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const facebookBtn = document.getElementById("share-facebook");
 
   if (twitterBtn) {
-    twitterBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const twitterUrl =
-        `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
-      window.open(twitterUrl, "_blank", "noopener,noreferrer");
-    });
+    const twitterUrl =
+      `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
+    twitterBtn.setAttribute("href", twitterUrl);
   }
+});
 
   if (facebookBtn) {
-    facebookBtn.addEventListener("click", (e) => {
-      e.preventDefault();
       const facebookUrl =
         `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-      window.open(facebookUrl, "_blank", "noopener,noreferrer");
+      facebookBtn.setAttribute("href", facebookUrl);
     });
   }
 });
