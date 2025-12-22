@@ -107,7 +107,8 @@
 }
 
 .post-hero {
-  height: 33vh;
+  height: 25vh;
+  min-height: 220px;
   pointer-events: none;
 }
 
@@ -116,7 +117,7 @@
   margin: 0 auto;
   padding: 0 24px 80px;
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   align-items: flex-start;
 }
 
