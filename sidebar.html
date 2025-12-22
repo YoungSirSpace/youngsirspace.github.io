@@ -1,28 +1,48 @@
-<aside class="sidebar">
-  <div class="glass-box profile-card">
-    <div class="avatar-wrapper">
-      <img src="/togawa_sakiko.png" alt="avatar">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | YoungSirSpace</title>
+
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/background.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/post.css">
+  <link rel="stylesheet" href="/css/toc.css">
+</head>
+
+<body>
+  <div class="bg-fixed"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a href="/" class="site-logo">YoungSirSpace</a>
+  </header>
+
+  <main class="page-layout">
+
+    <div class="main-column">
+      {{CONTENT}}
     </div>
-    
-    <h2 class="profile-name">Young</h2>
-    <p class="profile-desc">
-      Tying to polish this website.
-    </p>
-  </div>
-  
-  <div class="glass-box">
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://x.com/young1984_2007">X / Twitter</a></li>
-      <li><a href="https://github.com/YoungSirSpace">GitHub</a></li>
-    </ul>
-  </div>
 
-  <div class="glass-box toc-box">
-    <h2>Navigation</h2>
-    <p style="color:#888;font-size:0.85rem;">
-      Article TOC coming soon.
-    </p>
-  </div>
+    <aside class="sidebar">
+      <div class="glass-box profile-card">
+        <div class="avatar-wrapper">
+          <img src="/assets/avatar.jpg">
+        </div>
+        <h2>YoungSirSpace</h2>
+        <p class="profile-desc">Trying to polish this website.</p>
+      </div>
 
-</aside>
+      <div class="glass-box toc-box">
+        <h2>Contents</h2>
+        <nav id="toc"></nav>
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="/js/toc.js"></script>
+</body>
+</html>
