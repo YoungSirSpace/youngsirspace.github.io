@@ -10,7 +10,7 @@
 .content-box {
   max-width: 800px;
   width: calc(100% - 32px);
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 24px;
 }
 
@@ -109,7 +109,6 @@
 .post-hero {
   height: 25vh;
   min-height: 220px;
-  pointer-events: none;
 }
 
 .page-layout {
@@ -121,7 +120,7 @@
   align-items: flex-start;
 }
 
-.pots-wrapper {
+.post-wrapper {
   flex: 1;
 }
 
@@ -131,8 +130,17 @@
 
 .sidebar {
   position: sticky;
-  top: 96px;
+  top: calc(96px + 0px);
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+#article-container,
+.content-box {
+  margin-top: 0;
+}
+
+.main-column {
+  flex: 1;
 }
