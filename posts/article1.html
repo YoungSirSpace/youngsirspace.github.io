@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/post.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/toc.css">
   </head>
 
   <script src="/basic_script.js"></script>
@@ -51,5 +52,48 @@
         </div>
       </article>
     </div>
+
+    <script>
+    const toc = document.getElementById("toc");
+    const content = document.getElementById("postContent");
+    if (toc && content) {
+      const headers = content.querySelectorAll("h2, h3");
+      const ul = document.createElement("ul");
+
+      headers.forEach((h, i) => {
+        const id = "heading-" + i;
+        h.id = id;
+
+        const li = document.createElement("li");
+        if (h.tagName === "H3") li.style.paddingLeft = "1em";
+
+        const a = document.createElement("a");
+        a.href = "#" + id;
+        a.textContent = h.textContent;
+
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+
+      toc.appendChild(ul);
+
+      window.addEventListener("scroll", () => {
+        let current;
+        headers.forEach(h => {
+          if (h.getBoundingClientRect().top < 120) {
+            current = h.id;
+          }
+        });
+
+        toc.querySelectorAll("a").forEach(a => {
+          a.classList.toggle(
+            "active",
+            a.getAttribute("href") === "#" + current
+          );
+        });
+      });
+    }
+    </script>
+
   </body>
 </html>
