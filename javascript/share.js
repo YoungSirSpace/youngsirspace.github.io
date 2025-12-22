@@ -1,21 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const pageUrl = encodeURIComponent(window.location.href);
-  const pageTitle = encodeURIComponent(document.title);
+document.addEventListener('DOMContentLoaded', function() {
+  var twitterBtn = document.getElementById('share-twitter');
+  var facebookBtn = document.getElementById('share-facebook');
 
-  const twitterBtn = document.getElementById("share-twitter");
-  const facebookBtn = document.getElementById("share-facebook");
+  twitterBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var currentUrl = encodeURIComponent(window.location.href);
+    var currentTitle = encodeURIComponent(document.title);
+    var shareUrl = 'https://twitter.com/intent/tweet?text=' + currentTitle + '&url=' + currentUrl;
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+  });
 
-  if (twitterBtn) {
-    const twitterUrl =
-      `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
-    twitterBtn.setAttribute("href", twitterUrl);
-  }
-});
-
-  if (facebookBtn) {
-      const facebookUrl =
-        `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-      facebookBtn.setAttribute("href", facebookUrl);
-    });
-  }
+  facebookBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var currentUrl = encodeURIComponent(window.location.href);
+    var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl;
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+  });
 });
