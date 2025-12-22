@@ -105,3 +105,33 @@
   line-height: 1.7;
   color: #aaa;
 }
+
+.post-hero {
+  height: 33vh;
+  pointer-events: none;
+}
+
+.page-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.pots-wrapper {
+  flex: 1;
+}
+
+.sidebar {
+  width: 280px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
