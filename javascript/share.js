@@ -23,9 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
             var modal = document.getElementById('wechat-qr-modal');
             var qrImg = document.getElementById('wechat-qr-img');
             
+            if (modal.style.display === 'block') {
+                modal.style.display = 'none';
+                return;
+            }
+
             qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodedUrl;
             
-            modal.style.display = 'flex';
+            modal.style.display = 'block';
         }
         
         else if (e.target.closest('#close-qr') || e.target.id === 'wechat-qr-modal') {
