@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target.closest('#share-twitter')) {
             e.preventDefault();
             var shareUrl = 'https://twitter.com/intent/tweet?text=' + currentTitle + '&url=' + encodedUrl;
-            window.open(shareUrl, '_blank', 'width=1000,height=800');
+            window.open(shareUrl, '_blank', 'width=800,height=600');
         }
 
         else if (e.target.closest('#share-facebook')) {
             e.preventDefault();
             var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl;
-            window.open(shareUrl, '_blank', 'width=1000,height=800');
+            window.open(shareUrl, '_blank', 'width=800,height=600');
         }
 
         else if (e.target.closest('#share-discord') || e.target.closest('#share-instagram')) {
