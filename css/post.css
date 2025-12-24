@@ -56,25 +56,11 @@
   background-color: rgba(255, 255, 255, 0.05);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
-  overflow: hidden;
-}
-
-.post-card a.main-link::after {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  z-index: 10;
-}
-
-.post-card .post-title,
-.post-card .post-meta-area {
-    position: relative;
-    z-index: 2;
 }
 
 .post-card:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  transform: translateX(3px);
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateX(4px);
   box-shadow: inset 4px 4px 15px rgba(0, 0, 0, 0.15),
               0 4px 15px rgba(0, 0, 0, 0.05);
 }
