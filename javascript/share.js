@@ -11,12 +11,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (isWeChatBtn) {
             e.preventDefault();
+            
             if (modal.style.display === 'block') {
                 modal.style.display = 'none';
             } else {
                 var currentUrl = encodeURIComponent(window.location.href);
                 qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + currentUrl;
+
                 modal.style.display = 'block';
+
+                var btnRect = isWeChatBtn.getBoundingClientRect();
+                var shareArea = isWeChatBtn.parentElement;
+                var shareRect = shareArea.getBoundingClientRect();
+
+                var centerX = (btnRect.left - shareRect.left) + (btnRect.width / 2);
+
+                modal.style.left = centerX + 'px';
             }
             return;
         }
@@ -29,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        if (modal.style.display === 'block') {
+        if (modal && modal.style.display === 'block') {
             modal.style.display = 'none';
         }
  
