@@ -20,3 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.post-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            const link = card.querySelector('a');
+            if (link && e.target !== link) {
+                window.location.href = link.href;
+            }
+        });
+    });
+});
