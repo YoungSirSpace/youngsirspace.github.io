@@ -13,19 +13,29 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch(`/posts/${post}.html`)
+  fetch(`/posts/${post}.md`)
     .then(res => {
       if (!res.ok) {
         throw new Error("Post not found");
       }
       return res.text();
     })
-    .then(html => {
-      container.innerHTML = html;
+    .then(md => {
+      const html = marked.parse(md);
 
-      const titleElem = container.querySelector(".post-title");
-      if (titleElem) {
-        document.title = `${titleElem.innerText} | YoungSirSpace`;
+      container.innerHTML = `
+        <article class="post-content">
+          ${html}
+        </article>
+      `;
+
+      if (window.Prism) {
+        Prism.highlightAll();
+      }
+
+      const h1 = container.querySelector("h1");
+      if (h1) {
+        document.title = `${h1.innerText} | YoungSirSpace`;
       }
 
       if (typeof initTOC === "function") {
