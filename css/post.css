@@ -18,7 +18,7 @@
 .page-layout {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 25vh 24px 80px;
+  padding: 64px 24px 80px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
   gap: 32px;
@@ -104,10 +104,14 @@
   margin: 0;
 }
 
-#postContent.post-content { 
-  max-width: 850px; 
+#article-container {
+  padding: 48px 56px;
+  box-sizing: border-box;
+}
+
+.post-content {
+  max-width: 850px;
   margin: 0 auto;
-  padding: 40px 32px 50px;
 }
 
 #postContent .post-title {
@@ -122,6 +126,10 @@ div.post-content p {
   line-height: 1.7;
   margin-bottom: 1.2em;
   text-indent: 2em;
+}
+
+.post-content h1:first-child {
+  margin-top: 0;
 }
 
 .article-share {
@@ -184,7 +192,21 @@ div.post-content p {
 }
 
 @media (max-width: 600px) {
-  .page-layout { padding: 0 16px 40px; margin-top: 20px; }
-  div.post-content p { text-indent: 1.5em; font-size: 1.1rem; }
-  .article-share { margin-top: 2.5rem; justify-content: center; }
+  .page-layout {
+    padding: 32px 16px 40px;
+  }
+
+  #article-container {
+    padding: 32px 20px;
+  }
+
+  div.post-content p {
+    text-indent: 1.5em;
+    font-size: 1.05rem;
+  }
+
+  .article-share {
+    margin-top: 2.5rem;
+    justify-content: center;
+  }
 }
