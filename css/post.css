@@ -193,9 +193,9 @@ div.post-content p {
 }
 
 pre {
-  background: rgba(0, 0, 0, 0.18) !important;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 
   border-radius: 14px;
   padding: 1.2rem 1.4rem;
@@ -209,7 +209,7 @@ pre {
 }
 
 pre code {
-  background: none !important;
+  background: none;
   color: #e6e6e6;
   font-size: 0.95rem;
   line-height: 1.6;
