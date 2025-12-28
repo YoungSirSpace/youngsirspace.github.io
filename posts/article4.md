@@ -8,4 +8,4 @@ My trip was not on a whim, it was carefully planned for a long time. When I was 
 
 My first station is Osaka. Just after checking in, I came to the Shinsaibashi, where the famous billboard of Glico located. 
 
-![Billboard of Glico in Shinsaibashi](/post/Osaka Billboard.jpg "Billboard of Glico in Shinsaibashi")
+![Billboard of Glico in Shinsaibashi](/post/OsakaBillboard.jpg "Billboard of Glico in Shinsaibashi")
