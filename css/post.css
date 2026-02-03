@@ -145,12 +145,23 @@ div.post-content p {
 
 /* 1. 限制文章内图片的最大宽度，防止溢出 */
 .post-content img {
-    max-width: 100%;       /* 宽度最大为容器的100% */
+    max-width: 75%;       /* 宽度最大为容器的100% */
     height: auto;          /* 高度自动，保持长宽比 */
     display: block;        /* 将图片设为块级元素，独占一行 */
     margin: 1.5rem auto;   /* 上下留出间距，左右自动居中 */
     border-radius: 12px;   /* 加上圆角，符合你网站的圆润风格 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 可选：加一点阴影增加层次感 */
+}
+
+/* 将文章内的斜体字变灰、居中，作为注释 */
+.post-content p em {
+    display: block;        /* 让它独占一行 */
+    text-align: center;    /* 文字居中 */
+    color: var(--text-dim);/* 使用你定义的灰色变量 */
+    font-size: 0.9rem;     /* 字体稍微小一点 */
+    margin-top: -10px;     /* 稍微向上提一点，紧贴图片 */
+    margin-bottom: 20px;
+    font-style: normal;    /* 如果不想倾斜，可以设为 normal */
 }
 
 .article-share {
