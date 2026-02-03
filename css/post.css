@@ -31,6 +31,11 @@
   height: 25vh;
 }
 
+.page-layout.home-layout::before {
+  content: none;
+  height: 0;
+}
+
 .sidebar {
   position: sticky;
   top: calc(var(--header-height) + 24px);
