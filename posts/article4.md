@@ -10,5 +10,7 @@ My first station is Osaka. Just after checking in, I came to the Shinsaibashi, w
 
 <figure>
     <img src="/posts/OsakaBillboard.jpg" alt="Billboard of Glico">
-    <figcaption>Billboard of Glico</figcaption>
+    <figcaption>Billboard of Glico, I like it very much</figcaption>
 </figure>
+
+Strolling along the Dotonboti River, I was compeletely immersed in the atomosphere of the Japanese style streets.
