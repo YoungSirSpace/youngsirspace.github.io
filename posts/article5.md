@@ -1,4 +1,4 @@
-# Notes of Linear Algebra
+# Notes of Linear Algebra (Part.1)
 
 ## Matrix
 
@@ -21,3 +21,7 @@ $$\alpha_{1}, \alpha_{2}, \alpha_{3}, \cdots, \alpha_{n}$$
 and $n$ constants,
 
 $$k_{1}, k_{2}, k_{3}, \cdots, k_{n}$$
+
+we say the victors are ***linearly independent*** if and only if the equation
+
+$$\displaystyle\sum_{i=1}^{n} k_{i}\alpha_{i}=\theta (\theta means zero victor)$$
