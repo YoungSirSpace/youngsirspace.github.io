@@ -28,4 +28,10 @@ $$\displaystyle\sum_{i=1}^{n} k_{i}\alpha_{i}=\mathbf{0}\quad(\text{$\mathbf{0}$
 
 implies
 
-$$k_{1}=k_{2}=k_{3}=\cdots=k_{n}$$
+$$k_{1}=k_{2}=k_{3}=\cdots=k_{n}=0$$
+
+We need to know that:
+
+Independent columns: $Ax=\mathbf{0}$ has one solution. $A$ is an ***invertible matrix***.
+
+Dependent columns: $Cx=\mathbf{0}$ has many solutions. $C$ is a ***singular matrix***.
