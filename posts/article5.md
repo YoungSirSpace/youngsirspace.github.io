@@ -37,3 +37,7 @@ We need to know that:
 Independent columns: $Ax=\mathbf{0}$ has one solution. $A$ is an ***invertible matrix***.
 
 Dependent columns: $Cx=\mathbf{0}$ has many solutions. $C$ is a ***singular matrix***.
+
+## Linear Equations
+
+scalar multiplication $\quad{}3\begin{pmatrix}1\\\\3\end{pmatrix}=\begin{pmatrix}3\\\\9\end{pmatrix}$
