@@ -28,4 +28,4 @@ $$\displaystyle\sum_{i=1}^{n} k_{i}\alpha_{i}=\mathbf{0}\quad(\text{$\mathbf{0}$
 
 implies
 
-$$k_{1}=k_{2}=k_{3}=\cdots=k_{n}$$.
+$$k_{1}=k_{2}=k_{3}=\cdots=k_{n}$$
