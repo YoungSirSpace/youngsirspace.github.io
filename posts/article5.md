@@ -1,5 +1,7 @@
 # Notes of Linear Algebra (Part.1)
 
+The book I use to teach myself is *Introduction to Linear Algebra (5th Edition)*, whose writer is Gilbert Strang, printed by the Tsinghua University Press.
+
 ## Matrix
 
 Linear equation form $\quad{}Ax=b$
