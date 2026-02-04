@@ -25,3 +25,7 @@ $$k_{1}, k_{2}, k_{3}, \cdots, k_{n}$$
 we say the victors are ***linearly independent*** if and only if the equation
 
 $$\displaystyle\sum_{i=1}^{n} k_{i}\alpha_{i}=\mathbf{0}\quad(\text{$\mathbf{0}$ means the zero vector})$$
+
+implies
+
+$$k_{1}=k_{2}=k_{3}=\cdots=k_{n}$$.
