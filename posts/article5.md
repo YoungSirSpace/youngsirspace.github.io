@@ -16,8 +16,8 @@ Dependence $\quad{}w$ is in the plane of $u$ and $v$
 
 By extension, if there are $n$ victors,
 
-$\alpha_{1}, \alpha_{2}, \alpha_{3}, \cdots, \alpha_{n}$
+$\quad{}\alpha_{1}, \alpha_{2}, \alpha_{3}, \cdots, \alpha_{n}$
 
 and $n$ constants,
 
-$k_{1}, k_{2}, k_{3}, \cdots, k_{n}$
+$\quad{}k_{1}, k_{2}, k_{3}, \cdots, k_{n}$
