@@ -40,4 +40,4 @@ Dependent columns: $Cx=\mathbf{0}$ has many solutions. $C$ is a ***singular matr
 
 ## Linear Equations
 
-scalar multiplication $\quad{}3\begin{pmatrix}1\\\\3\end{pmatrix}=\begin{pmatrix}3\\\\9\end{pmatrix}$
+An example of scalar multiplication $\quad{}3\begin{bmatrix}1\\\\3\end{bmatrix}=\begin{bmatrix}3\\\\9\end{bmatrix}$
