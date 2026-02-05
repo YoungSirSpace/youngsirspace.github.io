@@ -6,7 +6,7 @@ The book I use to teach myself is *Introduction to Linear Algebra (5th Edition)*
 
 Linear equation form $\quad{}Ax=b$
 
-The equation can be solved in ordere (top to bottom), when $A$ is a triangular matrix. If $A$ is ***"invertible"***, we can write $x$ as $A^{-1}b$.
+The equation can be solved in order (top to bottom), when $A$ is a triangular matrix. If $A$ is ***"invertible"***, we can write $x$ as $A^{-1}b$.
 
 ## Independence and Dependence
 
@@ -54,7 +54,7 @@ Four steps to understanding elimination using matrices
 
 ### Elimination
 
->**Exmaple 1** Permanent failure with no solution
+>**Example 1** Permanent failure with no solution
 >
 >$$
 >\begin{cases}
