@@ -54,7 +54,7 @@ Four steps to understanding elimination using matrices
 
 ### Elimination
 
->Exmaple 1 Permanent failure with no solution
+>**Exmaple 1** Permanent failure with no solution
 >
 >$$
 >\begin{cases}
