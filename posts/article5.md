@@ -41,3 +41,13 @@ Dependent columns: $Cx=\mathbf{0}$ has many solutions. $C$ is a ***singular matr
 ## Linear Equations
 
 An example of scalar multiplication $\quad{}3\begin{bmatrix}1\\\\3\end{bmatrix}=\begin{bmatrix}3\\\\9\end{bmatrix}$
+
+Four steps to understanding elimination using matrices
+
+1.Elimination goes from $A$ to u triangular $U$ by a sequences of matrix steps $E_{ij}$.
+
+2.The triangular system is solved by ***back substitution***: working bottom to top.
+
+3.In matrix language $A$ is factored into $LU$, which means (lower triangular) (upper triangular).
+
+4.Elimination succeeds ***if $A$ is invertible***. (But it may need row changes).
