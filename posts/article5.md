@@ -113,3 +113,9 @@ Zero is never allowed as a pivot.
 >$$
 
 In these three cases, example 1 and 2 are ***singular***. Example 3 is ***nonsingular***.
+
+### Gaussian elimination
+
+from $\quad{}\begin{bmatrix}a_{11} & a_{21} & \cdots & a_{n1}\\\\a_{21} & a_{22} & \cdots & a_{n2}\\\\\vdots  & \vdots  & \ddots & \vdots\\\\a_{n1} & a_{n2} & \cdots & a_{nn}\end{bmatrix}$
+
+we swift it into $\quad{}\begin{bmatrix}x_{11} & x_{21} & \cdots & x_{n1}\\\\& x_{22} & \cdots & x_{n2}\\\\\vdots  & \vdots  & \ddots & \vdots\\\\ & & \cdots & x_{nn}\end{bmatrix}$
