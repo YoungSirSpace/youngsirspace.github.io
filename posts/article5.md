@@ -50,4 +50,4 @@ Four steps to understanding elimination using matrices
 
 3.In matrix language $A$ is factored into $LU$, which means (lower triangular) (upper triangular).
 
-4.Elimination succeeds ***if $A$ is invertible***. (But it may need row changes).
+4.Elimination succeeds ***if*** $A$ ***is invertible***. (But it may need row changes).
