@@ -96,7 +96,7 @@ Zero is never allowed as a pivot.
 >
 >Permutation
 >
->>$$
+>$$
 >\begin{cases}
 >0x + 2y = 4 \\\\
 >3x - 2y = 5
