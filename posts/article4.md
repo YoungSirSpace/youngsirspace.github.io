@@ -4,9 +4,9 @@
 
 I plan to record my trip to Japan in the following articles.
 
-My trip was not on a whim, it was carefully planned for a long time. When I was a primary school student, I stared dreaming a trip to Japan. I put myself into planning my trip as soon as I finished Gaokao, an important examination for most Chinese. I applied for visa successfully, after exchanging for Japanese yen and getting a Visa debit card, I boarded the fight to Japan. 
+My trip was not on a whim; it was carefully planned for a long time. Ever since I was in primary school, I had dreamed of traveling to Japan. I put myself into planning my trip as soon as I finished Gaokao, an examination of great importance to most Chinese students. After successfully obtaining my visa, exchanging Japanese yen, and securing a Visa debit card, I finally boarded the flight to Japan.
 
-My first station is Osaka. Looking back now, it all seems like a dream. It wasn't until I boarded the Nankai Electric Railway and sped towards Namba Station that I truly felt: I had arrived in Japan, the country I had longed to visit. In the quiet carriage, I looked around. Outside the window, Japanese-style streets and buildings stretched out, the sound of the tram echoing through the air—everything was so Japanese. Everything was brand new, yet so familiar—because I had already rehearsed my stroll through Japan in my mind many times before.
+My first station is Osaka. Looking back now, it all seems like a dream. It wasn't until I boarded the Nankai Electric Railway and sped towards Namba Station that I truly felt: I had arrived in Japan, the country I had longed to visit. Standing in the quiet carriage, I looked around. Outside the window, Japanese-style streets and buildings unfolded before me, the rhythmic sound of the tram echoing through the air—everything was so Japanese. Everything was brand new, yet so familiar—because I had already rehearsed my stroll through Japan in my mind many times before.
 
 Just after the hotel checking in, I came to the Shinsaibashi, where the famous billboard of Glico located. It was evening, not long after the sunset. Shinsaibashi was packed with people and very lively. Many people were taking photos in front of the Glico billboard, striking the same pose as the people in the advertisement.
 
@@ -15,4 +15,6 @@ Just after the hotel checking in, I came to the Shinsaibashi, where the famous b
     <figcaption>Billboard of Glico, I like it very much</figcaption>
 </figure>
 
-Strolling along the Dotonboti River, I was compeletely immersed in the atomosphere of the Japanese style streets.
+Strolling along the Dotonboti River, I was completely immersed in the atmosphere of the streets, so unmistakably Japanese. I had imagined myself walking through Japan, again and again, in countless daydreams over the past eighteen years. And now, in this very moment, I was truly there, in Japan. I was standing beside the Dotonbori River, leaning against the railing. The breeze drifted past, which was a bit hot, mixed with sounds of the river and the restless life along its banks.
+
+
