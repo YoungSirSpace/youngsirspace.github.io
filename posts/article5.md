@@ -54,11 +54,20 @@ Four steps to understanding elimination using matrices
 
 ### Elimination
 
-$$
-\begin{array}{rcl}
-\text{Example 1: Permanent failure with no solution} \\[4pt]
-x - 2y & = & 1 \\
-3x - 6y & = & 11 \\ \hline
-0y & = & 8
-\end{array}
-$$
+>Exmaple 1 Permanent failure with no solution
+>
+>$$
+>\begin{cases}
+>x - 2y = 1 \\
+>3x - 6y = 11
+>\end{cases}
+>$$
+>
+>substract 3 times eqn.1 to eqn.2
+>
+>$$
+>\begin{cases}
+>x - 2y = 1 \\
+>0y = 8
+>\end{cases}
+>$$
