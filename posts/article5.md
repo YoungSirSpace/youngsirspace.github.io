@@ -112,4 +112,4 @@ Zero is never allowed as a pivot.
 >\end{cases}
 >$$
 
-In these three cases, example 1 and 2 are ***singular***. Example 3 is **nonsingular***.
+In these three cases, example 1 and 2 are ***singular***. Example 3 is ***nonsingular***.
