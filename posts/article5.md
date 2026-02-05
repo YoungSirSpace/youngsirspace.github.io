@@ -71,4 +71,5 @@ Four steps to understanding elimination using matrices
 >0y = 8
 >\end{cases}
 >$$
+>
 >zero is never allowed as a pivot.
