@@ -8,8 +8,6 @@ Linear equation form $\quad{}Ax=b$
 
 The equation can be solved in ordere (top to bottom), when $A$ is a triangular matrix. If $A$ is ***"invertible"***, we can write $x$ as $A^{-1}b$.
 
-***
-
 ## Independence and Dependence
 
 For victors, $u$, $v$, $w$, there are:
@@ -40,8 +38,6 @@ Independent columns: $Ax=\mathbf{0}$ has one solution. $A$ is an ***invertible m
 
 Dependent columns: $Cx=\mathbf{0}$ has many solutions. $C$ is a ***singular matrix***.
 
-***
-
 ## Linear Equations
 
 An example of scalar multiplication $\quad{}3\begin{bmatrix}1\\\\3\end{bmatrix}=\begin{bmatrix}3\\\\9\end{bmatrix}$
@@ -56,15 +52,13 @@ Four steps to understanding elimination using matrices
 >
 >4.Elimination succeeds ***if*** $A$ ***is invertible***. (But it may need row changes).
 
-Elimination
+### Elimination
 
 $$
-\begin{aligned}
-\text{Example 1: Permanent failure with no solution} \\\\
-x - 2y &= 1 \\\\
-\text{subtract 3 times eqn. 1 from eqn. 2} \\\\
-3x - 6y &= 11 \\\\
-\hline
-0y &= 8
-\end{aligned}
+\begin{array}{rcl}
+\text{Example 1: Permanent failure with no solution} \\[4pt]
+x - 2y & = & 1 \\
+3x - 6y & = & 11 \\ \hline
+0y & = & 8
+\end{array}
 $$
