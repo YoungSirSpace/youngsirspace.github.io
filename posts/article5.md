@@ -129,7 +129,7 @@ The ***row exchange matrix***, also called ***permutation matrix***, $P_{ij}$ is
 For linear equation $Ax=b$, we can include $b$ as an extra column and follow it through elimination. The matrix $A$ is enlarged or "argumented" by the extra column $b$:
 
 $$
-\text{Argumented matrix} \begin{bmatrix}A & b\end{bmatrix}
+\text{Argumented matrix} \quad{} \begin{bmatrix}A & b\end{bmatrix}
 $$
 
 Elimination acts on the whole rows of matrix. When $A$ is swifted into $I$, the swifted $b$ is the solution of $x$.
