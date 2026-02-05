@@ -58,6 +58,10 @@ Four steps to understanding elimination using matrices
 
 Elimination
 
-    Example 1 Permanent failure with no solution
-    $x-2y=1$ subtract 3 times eqn.1 to eqn.2 $x-2y=1$
-    $3x-6y=11$                               $0y=8$
+$$
+\begin{array}{rcl}
+x - 2y & = & 1 \\
+3x - 6y & = & 11 \\ \hline
+0y & = & 8
+\end{array}
+$$
