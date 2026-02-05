@@ -60,10 +60,10 @@ Elimination
 
 $$
 \begin{aligned}
-\text{Example 1: Permanent failure with no solution} \\[6pt]
-x - 2y &= 1 \\
-\text{subtract 3 times eqn. 1 from eqn. 2} \\[6pt]
-3x - 6y &= 11 \\
+\text{Example 1: Permanent failure with no solution} \\\\
+x - 2y &= 1 \\\\
+\text{subtract 3 times eqn. 1 from eqn. 2} \\\\
+3x - 6y &= 11 \\\\
 \hline
 0y &= 8
 \end{aligned}
