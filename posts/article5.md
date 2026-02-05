@@ -116,6 +116,6 @@ In these three cases, example 1 and 2 are ***singular***. Example 3 is ***nonsin
 
 ### Gaussian elimination
 
-from $\begin{bmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\\\a_{21} & a_{22} & \cdots & a_{2n}\\\\ \vdots  & \vdots  & \ddots & \vdots\\\\a_{n1} & a_{n2} & \cdots & a_{nn}\end{bmatrix}$， we swift it into $\begin{bmatrix}x_{11} & x_{12} & \cdots & x_{n1}\\\\& x_{22} & \cdots & x_{2n}\\\\ & & \ddots & \vdots\\\\ & & & x_{nn}\end{bmatrix}$
+from $\begin{bmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\\\a_{21} & a_{22} & \cdots & a_{2n}\\\\ \vdots  & \vdots  & \ddots & \vdots\\\\a_{n1} & a_{n2} & \cdots & a_{nn}\end{bmatrix}$， we swift it into $\begin{bmatrix}x_{11} & x_{12} & \cdots & x_{1n}\\\\& x_{22} & \cdots & x_{2n}\\\\ & & \ddots & \vdots\\\\ & & & x_{nn}\end{bmatrix}$
 
 the key is to create zeros below every pivot by using the equations from up to bottom in order.
