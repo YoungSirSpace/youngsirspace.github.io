@@ -119,3 +119,19 @@ In these three cases, example 1 and 2 are ***singular***. Example 3 is ***nonsin
 from $\begin{bmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\\\a_{21} & a_{22} & \cdots & a_{2n}\\\\ \vdots  & \vdots  & \ddots & \vdots\\\\a_{n1} & a_{n2} & \cdots & a_{nn}\end{bmatrix}$， we swift it into $\begin{bmatrix}x_{11} & x_{12} & \cdots & x_{1n}\\\\& x_{22} & \cdots & x_{2n}\\\\ & & \ddots & \vdots\\\\ & & & x_{nn}\end{bmatrix}$
 
 the key is to create zeros below every pivot by using the equations from up to bottom in order.
+
+The ***identity matrix*** $I$ has 1's on the diagonal otherwise 0's. Then $Ib=b$ for all $b$. The ***elementary matrix*** or ***elimination matrix*** $E_{ij}$ has the extra nonzero entry -$l$ in the $i,j$ position. Then $E_{ij}$ subtracts a multiple $l$ of row $j$ from row $i$.
+
+The ***row exchange matrix***, also called ***permutation matrix***, $P_{ij}$ is the identity matrix with rows $i$ and $j$ reversed. It need to multiply the target matrixon the *left*, like $P_{ij}A$
+
+### The Argumented Matrix
+
+For linear equation $Ax=b$, we can include $b$ as an extra column and follow it through elimination. The matrix $A$ is enlarged or "argumented" by the extra column $b$:
+
+$$
+\text{Argumented matrix} \begin{bmatrix}A & b\end{bmatrix}
+$$
+
+Elimination acts on the whole rows of matrix. When $A$ is swifted into $I$, the swifted $b$ is the solution of $x$.
+
+## Rules for Matrix Operations
