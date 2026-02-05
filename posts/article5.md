@@ -71,5 +71,45 @@ Four steps to understanding elimination using matrices
 >0y = 8
 >\end{cases}
 >$$
+
+Zero is never allowed as a pivot.
+
+>**Example 2** Failure with infinitely many solutions
 >
->zero is never allowed as a pivot.
+>$$
+>\begin{cases}
+>x - 2y = 1 \\\\
+>3x - 6y = 3
+>\end{cases}
+>$$
+>
+>substract 3 times eqn.1 to eqn.2
+>
+>$$
+>\begin{cases}
+>x - 2y = 1 \\\\
+>0y = 0
+>\end{cases}
+>$$
+
+>**Example 3** A row change
+>
+>Permutation
+>
+>>$$
+>\begin{cases}
+>0x + 2y = 4 \\\\
+>3x - 2y = 5
+>\end{cases}
+>$$
+>
+>exchange
+>
+>$$
+>\begin{cases}
+>3x - 2y = 5 \\\\
+>2y = 4
+>\end{cases}
+>$$
+
+In these three cases, example 1 and 2 are ***singular***. Example 3 is **nonsingular***.
