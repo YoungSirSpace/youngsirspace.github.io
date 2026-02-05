@@ -58,7 +58,7 @@ Four steps to understanding elimination using matrices
 >
 >$$
 >\begin{cases}
->x - 2y = 1 \\
+>x - 2y = 1 \\\\
 >3x - 6y = 11
 >\end{cases}
 >$$
@@ -67,7 +67,7 @@ Four steps to understanding elimination using matrices
 >
 >$$
 >\begin{cases}
->x - 2y = 1 \\
+>x - 2y = 1 \\\\
 >0y = 8
 >\end{cases}
 >$$
