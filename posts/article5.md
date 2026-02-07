@@ -138,3 +138,4 @@ Elimination acts on the whole rows of matrix. When $A$ is swifted into $I$, the 
 
 $$
 \lim\limits_{D \to D_{1}} \iint_{D_{1}} \mathrm{e}^{-(x^{2} + y^{2})}\,\mathrm{d}x{d}y = \lim\limits_{A \to \infty} \int_0^A mathrm{e}^{-x^{2}}\,\mathrm{d}x \times \int_0^A mathrm{e}^{-y^{2}}\,\mathrm{d}y
+$$
