@@ -5,7 +5,7 @@ date: 2026-02-06
 excerpt: "Just record a unforgattable experience for me."
 ---
 
-For memmory, I plan to record my trip to Japan in the following articles.
+For memory, I plan to record my trip to Japan in the following articles.
 
 My trip was not on a whim; it was carefully planned for a long time. Ever since I was in primary school, I had dreamed of traveling to Japan. I put myself into planning my trip as soon as I finished Gaokao, an examination of great importance to most Chinese students. After successfully obtaining my visa, exchanging Japanese yen, and securing a Visa debit card, I finally boarded the flight to Japan.
 
