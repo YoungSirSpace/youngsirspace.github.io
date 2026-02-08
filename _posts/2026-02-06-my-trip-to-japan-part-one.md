@@ -14,7 +14,7 @@ My first station is Osaka. Looking back now, it all seems like a dream. It wasn'
 Just after the hotel checking in, I came to the Shinsaibashi, where the famous billboard of Glico located. It was evening, not long after the sunset. Shinsaibashi was packed with people and very lively. Many people were taking photos in front of the Glico billboard, striking the same pose as the people in the billboard.
 
 <figure>
-    <img src="/_posts/My_Trip_to_Japan/OsakaBillboard.jpg" alt="Billboard of Glico">
+    <img src="/post-images/My-Trip-to-Japan/OsakaBillboard.jpg" alt="Billboard of Glico">
     <figcaption>Billboard of Glico, I like it very much</figcaption>
 </figure>
 
