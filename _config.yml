@@ -6,4 +6,3 @@ url: "https://youngsirspace.github.io"
 
 markdown: kramdown
 kramdown:
-  smart_quotes: false
