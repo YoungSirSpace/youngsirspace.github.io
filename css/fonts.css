@@ -1,20 +1,20 @@
-/* ===== 西文：Times New Roman ===== */
+/* ===== 西文：Source Serif 4 ===== */
 @font-face {
   font-family: "MyLatin";
-  src: local("Times New Roman"), local("TimesNewRomanPSMT");
+  src: local("Source Serif 4"), local("Source Serif Pro");
   unicode-range:
-    U+0000-00FF,   /* Basic Latin */
-    U+0100-017F,  /* Latin Extended-A */
-    U+0180-024F;  /* Latin Extended-B */
+    U+0000-00FF,
+    U+0100-017F,
+    U+0180-024F;
 }
 
-/* ===== 中文（简体）：宋体 ===== */
+/* ===== 中文：宋体 ===== */
 @font-face {
   font-family: "MyCJK-SC";
   src: local("SimSun"), local("Songti SC"), local("STSong");
   unicode-range:
-    U+4E00-9FFF,  /* CJK Unified Ideographs */
-    U+3000-303F;  /* CJK Symbols and Punctuation */
+    U+4E00-9FFF,
+    U+3000-303F;
 }
 
 /* ===== 日文：明朝体 ===== */
@@ -22,6 +22,6 @@
   font-family: "MyCJK-JP";
   src: local("MS Mincho"), local("Hiragino Mincho ProN");
   unicode-range:
-    U+3040-30FF,  /* Hiragana + Katakana */
-    U+31F0-31FF;  /* Katakana Phonetic Extensions */
+    U+3040-30FF,
+    U+31F0-31FF;
 }
