@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Trip to Japan (Part 1)"
-date: 2026-2-6
+date: 2026-02-06
 excerpt: "Just record a unforgattable experience for me."
 ---
 
