@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Why I Built This Website?"
+date: 2025-12-20
+excerpt: "Speak my mind and record my growth."
+---
+
 # Article 1 – Why I Built This Website?
 
 *20 December, 2025*
