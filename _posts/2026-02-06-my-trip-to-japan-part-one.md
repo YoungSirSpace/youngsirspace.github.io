@@ -14,8 +14,9 @@ My first station is Osaka. Looking back now, it all seems like a dream. It wasn'
 Just after the hotel checking in, I came to the Shinsaibashi, where the famous billboard of Glico located. It was evening, not long after the sunset. Shinsaibashi was packed with people and very lively. Many people were taking photos in front of the Glico billboard, striking the same pose as the people in the billboard.
 
 <figure>
-    <img src="/post-images/My-Trip-to-Japan/OsakaBillboard.jpg" alt="Billboard of Glico">
-    <figcaption>Billboard of Glico, I like it very much</figcaption>
+  <img src="{{ site.baseurl }}/post-images/My-Trip-to-Japan/OsakaBillboard.jpg"
+       alt="Billboard of Glico">
+  <figcaption>Billboard of Glico, I like it very much</figcaption>
 </figure>
 
 Strolling along the Dotonboti River, I was completely immersed in the atmosphere of the streets, so unmistakably Japanese. I had imagined myself walking through Japan, again and again, in countless daydreams over the past eighteen years. And now, in this very moment, I was truly there, in Japan. I was standing beside the Dotonbori River, leaning against the railing. The breeze drifted past, which was a bit hot, mixed with sounds of the river and the restless life along its banks.
