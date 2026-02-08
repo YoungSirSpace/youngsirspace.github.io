@@ -13,21 +13,6 @@ My first station is Osaka. Looking back now, it all seems like a dream. It wasn'
 
 Just after the hotel checking in, I came to the Shinsaibashi, where the famous billboard of Glico located. It was evening, not long after the sunset. Shinsaibashi was packed with people and very lively. Many people were taking photos in front of the Glico billboard, striking the same pose as the people in the billboard.
 
----
-layout: post
-title: "My Trip to Japan (Part 1)"
-date: 2026-02-06
-excerpt: "Just record a unforgattable experience for me."
----
-
-For memory, I plan to record my trip to Japan in the following articles.
-
-My trip was not on a whim; it was carefully planned for a long time. Ever since I was in primary school, I had dreamed of traveling to Japan. I put myself into planning my trip as soon as I finished Gaokao, an examination of great importance to most Chinese students. After successfully obtaining my visa, exchanging Japanese yen, and securing a Visa debit card, I finally boarded the flight to Japan.
-
-My first station is Osaka. Looking back now, it all seems like a dream. It wasn't until I boarded the Nankai Electric Railway and sped towards Namba Station that I truly felt: I had arrived in Japan, the country I had longed to visit. Standing in the quiet carriage, I looked around. Outside the window, Japanese-style streets and buildings unfolded before me, the rhythmic sound of the tram echoing through the air—everything was so Japanese. Everything was brand new, yet so familiar—because I had already rehearsed my stroll through Japan in my mind many times before.
-
-Just after the hotel checking in, I came to the Shinsaibashi, where the famous billboard of Glico located. It was evening, not long after the sunset. Shinsaibashi was packed with people and very lively. Many people were taking photos in front of the Glico billboard, striking the same pose as the people in the billboard.
-
 <figure>
   <img src="/post-images/My-Trip-to-Japan/OsakaBillboard.jpg"
        alt="Billboard of Glico">
