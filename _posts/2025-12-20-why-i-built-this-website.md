@@ -19,6 +19,6 @@ Then, I found a serious problem. There is a maximum length for a single post wit
 
 Something occurred to me at that time. I recalled a senior from my high school, who is majoring in electronic engineering at Tsinghua University right now. I found his GitHub profile, and clicked the link to his [**personal blog website**](https://blog.konpoku.top/). As I supposed, he uploaded some of his study notes there. That is how I think a personal blog website will be used for a student. It inspired me a lot. From then on, I determined to build a blog website. Not only could I write my notes here, but I could also write some book reviews for recording. Also, I was wondering whether the website could be a repository for my files. I will keep on trying.
 
-That's why I built this website. I found that I had a great interest in building a website, which brought the happiness of coding back to me.
+Above is the reason why I built this website. I found that I had a great interest in building a website, which brought the happiness of coding back to me.
 
 Hope this website can be an **oasis** for me.
