@@ -5,10 +5,6 @@ date: 2025-12-20
 excerpt: "Speak my mind and record my growth."
 ---
 
-# Article 1 – Why I Built This Website?
-
-*20 December, 2025*
-
 As a pure beginner in computer science, just after entering the university and starting my study, I was badly hit by the course. Meanwhile, I found that many of my classmates could get great scores with little study, which broke my spirit again.
 
 In that case, I was pretty depressed, wondering whether I was not suitable for computer science.
