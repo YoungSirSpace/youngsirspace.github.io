@@ -3,7 +3,10 @@ body {
   margin: 0;
   line-height: 1.8;
   color: white;
-  font-family: "MySerif", serif;
+  font-family: "MyLatin",
+    "MyCJK-SC",
+    "MyCJK-JP",
+    serif;
   background: none;
 }
 
