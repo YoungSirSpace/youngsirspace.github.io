@@ -1,6 +1,9 @@
-# Some of My Concerns About the World
-
-*22 December, 2025*
+---
+layout: post
+title: "Some of My Concerns About the World"
+date: 2025-12-22
+excerpt: "Whether I can live in this world?"
+---
 
 I am going to write some of my concerns here. It is a bit like a word in Chinese internet called **“jianzheng (键政)”**, which means discussing politics through typing on the keyboard.
 
