@@ -1,4 +1,4 @@
-/* ===== 西文：Source Serif 4 ===== */
+/* ===== 西文：Source Serif 4 ===== 
 @font-face {
   font-family: "MyLatin";
   src: local("Source Serif 4"), local("Source Serif Pro");
@@ -8,7 +8,7 @@
     U+0180-024F;
 }
 
-/* ===== 中文：宋体 ===== */
+ ===== 中文：宋体 ===== 
 @font-face {
   font-family: "MyCJK-SC";
   src: local("SimSun"), local("Songti SC"), local("STSong");
@@ -17,11 +17,24 @@
     U+3000-303F;
 }
 
-/* ===== 日文：明朝体 ===== */
+ ===== 日文：明朝体 ===== 
 @font-face {
   font-family: "MyCJK-JP";
   src: local("MS Mincho"), local("Hiragino Mincho ProN");
   unicode-range:
     U+3040-30FF,
     U+31F0-31FF;
+} */
+
+:root {
+  --font-body:
+    "Source Serif 4",
+    "Times New Roman",
+    "Songti SC",
+    "Hiragino Mincho ProN",
+    serif;
+}
+
+body {
+  font-family: var(--font-body);
 }
