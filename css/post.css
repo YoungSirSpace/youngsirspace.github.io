@@ -153,16 +153,6 @@ div.post-content p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Markdown 图片下方的“伪 figcaption” */
-.post-content img + p em {
-  display: block;
-  text-align: center;
-  margin-top: -1rem;
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  font-style: normal;
-}
-
 .article-share {
   display: flex;
   align-items: center;
