@@ -15,6 +15,8 @@ Just after the hotel checking in, I came to the Shinsaibashi, where the famous b
 
 ![Billboard of Glico](/post-images/My-Trip-to-Japan/OsakaBillboard.jpg)
 
+*Billboard of Glico, I like it very much*
+
 Strolling along the Dotonboti River, I was completely immersed in the atmosphere of the streets, so unmistakably Japanese. I had imagined myself walking through Japan, again and again, in countless daydreams over the past eighteen years. And now, in this very moment, I was truly there, in Japan. I was standing beside the Dotonbori River, leaning against the railing. The breeze drifted past, which was a bit hot, mixed with sounds of the river and the restless life along its banks.
 
 I wandered around the Shinsaibashi area aimlessly until eleven. After buying some food and drinks in Lawson, I walked back to my hotel—a compact Japanese apartment. Once inside, I tried many of the small things I had always wanted to do, from drinking tap water from the faucet to watching anime on television. It was pretty funny how something so taken for granted could still make me feel oddly exciting and fresh.
