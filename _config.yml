@@ -2,4 +2,7 @@ title: YoungSirSpace
 description: What's past is Prologue.
 baseurl: ""
 url: "https://youngsirspace.github.io"
-# theme: jekyll-theme-cayman # 或者留空，完全使用你自己的 CSS
+
+markdown: kramdown
+kramdown:
+  smart_quotes: false
