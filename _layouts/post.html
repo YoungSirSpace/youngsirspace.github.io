@@ -7,7 +7,7 @@ layout: null
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">YoungSirSpace</title>
+  <title>{{ page.title }} - YoungSirSpace</title>
 
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/base.css">
@@ -17,13 +17,13 @@ layout: null
   <link rel="stylesheet" href="/css/post.css">
   <link rel="stylesheet" href="/css/responsive.css">
   <link rel="stylesheet" href="/css/toc.css">
-  <script src="../javascript/math.js"></script>
+  
+  <script src="/javascript/math.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css">
 </head>
 
 <body>
-
   <div class="bg-fixed"></div>
   <header class="site-header" id="siteHeader">
     <a href="/" class="site-logo">YoungSirSpace</a>
@@ -32,57 +32,35 @@ layout: null
   <section class="post-hero"></section>
 
   <main class="page-layout">
-
     <div class="main-column">
-
       <div class="content-box glass-box" id="article-container">
-        <article id="post-body" class="post-content"></article>
+        <article class="post-content">
+          <h1>{{ page.title }}</h1>
+          <p class="post-date" style="opacity: 0.6; margin-bottom: 20px;">
+            {{ page.date | date: "%e %B, %Y" }}
+          </p>
+          
+          <div class="markdown-body">
+            {{ content }}
+          </div>
+        </article>
 
         <div class="share-bar">
-        <div class="share-label">Share</div>
-
-          <a id="share-twitter" class="share-btn" target="_blank" rel="noopener">
-            <img src="/X.png" alt="Share on X">
-          </a>
-
-          <a id="share-facebook" class="share-btn" target="_blank" rel="noopener">
-            <img src="/Facebook.png" alt="Share on Facebook">
-          </a>
-
-          <a id="share-wechat" class="share-btn" href="#">
-            <img src="/wechat.png" alt="Share on WeChat">
-          </a>
-
-          <a id="share-discord" class="share-btn" href="#">
-            <img src="/discord.png" alt="Share on Discord">
-          </a>
-
-          <a id="share-instagram" class="share-btn" href="#">
-            <img src="/Instagram.png" alt="Share on Instagram">
-          </a>
-
-          <div id="wechat-qr-modal" class="qr-modal" style="display:none;">
-            <div class="qr-content">
-              <p>Scan with WeChat</p>
-              <img id="wechat-qr-img" src="" alt="QR Code">
-              <button id="close-qr">Close</button>
-            </div>
-          </div>
+          <div class="share-label">Share</div>
+          <a id="share-twitter" class="share-btn" target="_blank" rel="noopener"><img src="/X.png" alt="X"></a>
+          <a id="share-facebook" class="share-btn" target="_blank" rel="noopener"><img src="/Facebook.png" alt="FB"></a>
+          <a id="share-wechat" class="share-btn" href="#"><img src="/wechat.png" alt="WeChat"></a>
+          <a id="share-discord" class="share-btn" href="#"><img src="/discord.png" alt="Discord"></a>
+          <a id="share-instagram" class="share-btn" href="#"><img src="/Instagram.png" alt="Instagram"></a>
         </div>
       </div>
     </div>
 
-    </div>
-
     <aside class="sidebar">
-
       <div class="glass-box profile-card">
-        <div class="avatar-wrapper">
-          <img src="/togawa_sakiko.png" alt="Avatar">
-        </div>
+        <div class="avatar-wrapper"><img src="/togawa_sakiko.png" alt="Avatar"></div>
         <h2>Young</h2>
         <p class="profile-desc">Trying to polish this website.</p>
-
         <h2>Links</h2>
         <div class="links-list">
           <p><a href="https://x.com/young1984_2007">X / Twitter</a></p>
@@ -90,26 +68,21 @@ layout: null
         </div>
       </div>
 
-      <div class="glass-box toc-box">
+      <div class="glass-box">
         <h2>Recent Posts</h2>
         <ul>
-          <li><a href="/layouts/post.html?post=article1">Why I Built This Website?</a></li>
-          <li><a href="/layouts/post.html?post=article2">Some of My Concerns About the World</a></li>
+          {% for post in site.posts limit:5 %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
         </ul>
       </div>
-
     </aside>
-
   </main>
 
   <script src="/javascript/basic_script.js"></script>
-  <script src="/javascript/loadPost.js"></script>
   <script src="/javascript/toc.js"></script>
   <script src="/javascript/header-blur.js"></script>
   <script src="/javascript/share.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
-
 </body>
 </html>
