@@ -29,19 +29,16 @@ layout: null
     
     <body class="home">
         <div class="bg-fixed"></div>
-        
-        <header class="site-header" id="siteHeader">
-            <a href="/" class="site-logo">
-                YoungSirSpace
-            </a>
 
-            <nav class="site-nav">
-                <a href="/">Home</a>
-                <a href="/links/">Links</a>
-                <a href="/sources/">Sources</a>
-                <a href="https://github.com/YoungSirSpace" target="_blank">Projects</a>
-            </nav>
-        </header>
+        <div id="header-container"></div>
+
+        <script>
+            fetch("/_layouts/header.html")
+            .then(res => res.text())
+            .then(html +> {
+                document.getElementById("header-container").innerHTML = html;
+            });
+        </script>
 
         <section class="hero">
             <h1 class="hero-title">
