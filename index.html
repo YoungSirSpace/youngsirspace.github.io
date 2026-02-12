@@ -33,9 +33,9 @@ layout: null
         <div id="header-container"></div>
 
         <script>
-            fetch("/_layouts/header.html")
+            fetch("/header.html")
             .then(res => res.text())
-            .then(html +> {
+            .then(html => {
                 document.getElementById("header-container").innerHTML = html;
             });
         </script>
