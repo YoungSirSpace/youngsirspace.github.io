@@ -7,3 +7,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader);
+});
