@@ -72,7 +72,7 @@ body:not(.home) .site-nav {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: #5753b8;
+  background-color: #5450a1;
   transition: width 0.25s ease;
 }
 
