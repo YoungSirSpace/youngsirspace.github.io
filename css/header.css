@@ -42,7 +42,7 @@
   display: flex;
   gap: 28px;
   
-  opacity: 0;
+  opacity: 1 !important;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
