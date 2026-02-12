@@ -39,8 +39,19 @@
 }
 
 .site-nav {
-  display: flex;
-  gap: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.site-header.scrolled .site-nav {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body:not(.home) .site-nav {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .site-nav a {
