@@ -1,4 +1,4 @@
-const header = document.getElementById("siteHeader");
+/*const header = document.getElementById("siteHeader");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -11,3 +11,4 @@ window.addEventListener("scroll", () => {
   updateHeader();
   window.addEventListener("scroll", updateHeader);
 });
+*/
