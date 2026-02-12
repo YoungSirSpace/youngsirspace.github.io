@@ -9,3 +9,4 @@ After a comfortable nigght's sleep, I was greeted by a stunning blue sky the mom
 
 After finishing the breakfast, we set out for the Osaka Castle, home to its famous tenshukaku.
 
+![Osaka Castle Park](/post-images/My-Trip-to-Japan/osaka-park.jpg)
