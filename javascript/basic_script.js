@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+  updateHeader();
+  window.addEventListener("scroll", updateHeader);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.post-card');
     
