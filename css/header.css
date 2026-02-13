@@ -48,7 +48,6 @@
 }
 
 .site-header.scrolled .site-nav {
-body:not(.home) .site-nav {
   opacity: 1;
   pointer-events: auto;
 }
