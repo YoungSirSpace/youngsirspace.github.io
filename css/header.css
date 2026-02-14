@@ -9,6 +9,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   z-index: 1000;
 
@@ -23,10 +24,10 @@
 }
 
 .site-header.scrolled {
-  background-color: rgba(0,0,0,0.35);
-  backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.35); /* ← 透明度可调 */
+  backdrop-filter: blur(7px);           /* ← 模糊强度可调 */
   -webkit-backdrop-filter: blur(7px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .site-logo {
@@ -34,24 +35,16 @@
   font-weight: bold;
 }
 
-.site-header {
-  justify-content: space-between;
-}
-
 .site-nav {
   display: flex;
   gap: 28px;
-  
+
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
-.site-header.scrolled .site-nav {
-  opacity: 1;
-  pointer-events: auto;
-}
-
+.site-header.scrolled .site-nav,
 body:not(.home) .site-nav {
   opacity: 1;
   pointer-events: auto;
@@ -80,22 +73,28 @@ body:not(.home) .site-nav {
   width: 100%;
 }
 
+/* =========================
+   Dropdown (Sources)
+   ========================= */
+
 .nav-dropdown {
   position: relative;
 }
 
+/* 下拉面板 */
 .dropdown-menu {
   position: absolute;
   top: calc(100% + 10px);
   left: 0;
 
-  min-width: 180px;
+  min-width: 200px;
   padding: 10px 0;
 
-  background: rgba(20, 20, 20, 0.85);
-  backdrop-filter: blur(10px);
-  border-radius: 14px;
+  background: rgba(20, 20, 20, 0.85); /* ← 列表透明度 */
+  backdrop-filter: blur(10px);        /* ← 列表模糊 */
+  -webkit-backdrop-filter: blur(10px);
 
+  border-radius: 14px;                /* ← 圆角 */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
   opacity: 0;
@@ -109,4 +108,45 @@ body:not(.home) .site-nav {
   z-index: 999;
 }
 
+/* 悬停保持 */
+.nav-dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
+/* 下拉条目 */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+
+  opacity: 0;
+  transform: translateY(-6px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* 悬停后条目显现 */
+.nav-dropdown:hover .dropdown-menu a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 逐条出现延迟（可继续加） */
+.dropdown-menu a:nth-child(1) { transition-delay: 0.05s; }
+.dropdown-menu a:nth-child(2) { transition-delay: 0.10s; }
+.dropdown-menu a:nth-child(3) { transition-delay: 0.15s; }
+.dropdown-menu a:nth-child(4) { transition-delay: 0.20s; }
+.dropdown-menu a:nth-child(5) { transition-delay: 0.25s; }
+
+/* Hover 高亮 */
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.08); /* ← hover 明暗 */
+}
