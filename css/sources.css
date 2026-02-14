@@ -1,0 +1,62 @@
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.source-card {
+  background: rgba(20, 20, 20, 0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px;
+
+  color: white;
+  text-decoration: none;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.source-card:hover {
+  transform: translateY(-4px);
+}
+
+.source-card.hidden {
+  opacity: 0;
+  transform: scale(0.96);
+  pointer-events: none;
+}
+
+.source-meta {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  display: flex;
+  gap: 12px;
+  margin: 6px 0;
+}
+
+.source-desc {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.source-filters li {
+  cursor: pointer;
+  margin: 8px 0;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.source-filters li.active,
+.source-filters li:hover {
+  opacity: 1;
+}
+
+.tag {
+  background: rgba(255,255,255,0.15);
+  padding: 2px 8px;
+  border-radius: 8px;
+}
