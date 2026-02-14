@@ -79,3 +79,43 @@ body:not(.home) .site-nav {
 .site-nav a:hover::after {
   width: 100%;
 }
+
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  min-width: 180px;
+  padding: 8px 0;
+
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  display: none;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  color: #ddd;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
