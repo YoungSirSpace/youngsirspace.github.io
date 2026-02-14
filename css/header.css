@@ -1,12 +1,3 @@
-:root {
-  --glass-bg: rgba(0, 0, 0, 0.35);
-  --glass-blur: blur(7px);
-  --glass-shadow: 0 4px 20px rgba(0,0,0,0.25);
-
-  --dropdown-width: 160px;
-  --dropdown-radius: 12px;
-}
-
 .site-header {
   position: fixed;
   top: 0;
@@ -18,7 +9,6 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   z-index: 1000;
 
@@ -33,10 +23,10 @@
 }
 
 .site-header.scrolled {
-  background-color: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  background-color: rgba(0,0,0,0.35);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
 }
 
 .site-logo {
@@ -44,27 +34,31 @@
   font-weight: bold;
 }
 
-/* =========================
-   Nav
-   ========================= */
+.site-header {
+  justify-content: space-between;
+}
 
 .site-nav {
   display: flex;
   gap: 28px;
-
+  
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
-.site-header.scrolled .site-nav,
+.site-header.scrolled .site-nav {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 body:not(.home) .site-nav {
   opacity: 1;
   pointer-events: auto;
 }
 
 .site-nav a {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-size: 1.05rem;
   position: relative;
@@ -84,89 +78,4 @@ body:not(.home) .site-nav {
 
 .site-nav a:hover::after {
   width: 100%;
-}
-
-/* =========================
-   Dropdown 容器
-   ========================= */
-
-.nav-dropdown {
-  position: relative;
-
-  /* hover 缓冲区，防止瞬间消失 */
-  padding-bottom: 14px;
-}
-
-/* =========================
-   Dropdown 面板
-   ========================= */
-
-.dropdown-menu {
-  position: absolute;
-  top: calc(100% + 15px);
-  left: 50%;
-
-  width: var(--dropdown-width);
-  padding: 8px 0;
-
-  background-color: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-
-  border-radius: var(--dropdown-radius);
-  box-shadow: var(--glass-shadow);
-
-  opacity: 0;
-  transform: translateX(-50%) translateY(-6px);
-  pointer-events: none;
-
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-
-  z-index: 999;
-}
-
-/* hover 整个容器时显示 */
-.nav-dropdown:hover .dropdown-menu {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
-}
-
-/* =========================
-   Dropdown 项目
-   ========================= */
-
-.dropdown-menu a {
-  display: block;
-  padding: 10px 16px;
-
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.85);
-  text-decoration: none;
-
-  opacity: 0;
-  transform: translateY(-4px);
-
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
-
-/* 容器 hover 时逐条出现 */
-.nav-dropdown:hover .dropdown-menu a {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 顺序动画 */
-.dropdown-menu a:nth-child(1) { transition-delay: 0.06s; }
-.dropdown-menu a:nth-child(2) { transition-delay: 0.12s; }
-.dropdown-menu a:nth-child(3) { transition-delay: 0.18s; }
-.dropdown-menu a:nth-child(4) { transition-delay: 0.24s; }
-
-/* hover 高亮 */
-.dropdown-menu a:hover {
-  background: rgba(255,255,255,0.08);
 }
