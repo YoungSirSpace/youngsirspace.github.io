@@ -1,0 +1,22 @@
+---
+layout: default
+title: Sources
+---
+
+<section class="sources-page">
+  <h1>Sources</h1>
+
+  <div class="sources-grid">
+    {% assign current_category = page.url | split: "category=" | last %}
+
+    {% for item in site.sources %}
+      {% if page.url contains "category=" %}
+        {% if item.categories contains current_category %}
+          {% include source-card.html item=item %}
+        {% endif %}
+      {% else %}
+        {% include source-card.html item=item %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
