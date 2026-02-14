@@ -1,22 +1,118 @@
 ---
-layout: default
-title: Sources
+layout: null
 ---
 
-<section class="sources-page">
-  <h1>Sources</h1>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <meta name="author" content="YoungHe">
+  <meta name="copyright" content="YoungHe">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#0d0d0d">
 
-  <div class="sources-grid">
-    {% assign current_category = page.url | split: "category=" | last %}
+  <title>Sources | {{ site.title }}</title>
+  <link rel="icon" href="/favicon.ico">
 
-    {% for item in site.sources %}
-      {% if page.url contains "category=" %}
-        {% if item.categories contains current_category %}
-          {% include source-card.html item=item %}
-        {% endif %}
-      {% else %}
-        {% include source-card.html item=item %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</section>
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/background.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/post.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/sources.css">
+</head>
+
+<body>
+  <div class="bg-fixed"></div>
+
+  {% include header.html %}
+
+  <main class="page-layout">
+
+    <!-- 左侧分类 -->
+    <aside class="sidebar sources-sidebar glass-box">
+      <h2>Categories</h2>
+      <ul class="source-filters">
+        <li data-filter="all" class="active">All</li>
+        <li data-filter="algorithm">Algorithm</li>
+        <li data-filter="math">Math</li>
+        <li data-filter="language">Language</li>
+      </ul>
+    </aside>
+
+    <!-- 中间资源列表 -->
+    <section class="post-list-box glass-box sources-list-box">
+      <div class="post-list">
+        <h2>Sources</h2>
+        <p>Collected materials and references.</p>
+
+        <div class="sources-grid">
+          {% for s in site.sources %}
+          <a class="source-card"
+             href="{{ s.file }}"
+             target="_blank"
+             data-category="{{ s.category }}">
+
+            <h3 class="source-title">{{ s.title }}</h3>
+
+            <div class="source-meta">
+              {% if s.author %}<span>{{ s.author }}</span>{% endif %}
+              {% if s.year %}<span>{{ s.year }}</span>{% endif %}
+              {% if s.type %}<span class="tag">{{ s.type }}</span>{% endif %}
+            </div>
+
+            {% if s.excerpt %}
+            <p class="source-desc">
+              {{ s.excerpt | strip_html | truncate: 120 }}
+            </p>
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- 右侧：复用你主页 sidebar -->
+    <aside class="sidebar">
+      <div class="glass-box profile-card">
+        <div class="avatar-wrapper">
+          <img src="/togawa_sakiko.png" alt="avatar">
+        </div>
+        <h2 class="profile-name">Young</h2>
+        <p class="profile-desc">Tying to polish this website.</p>
+      </div>
+    </aside>
+
+  </main>
+
+  {% include footer.html %}
+
+  <!-- 分类过滤脚本 -->
+  <script>
+    const filters = document.querySelectorAll(".source-filters li");
+    const cards = document.querySelectorAll(".source-card");
+
+    filters.forEach(f => {
+      f.addEventListener("click", () => {
+        filters.forEach(x => x.classList.remove("active"));
+        f.classList.add("active");
+
+        const cat = f.dataset.filter;
+
+        cards.forEach(card => {
+          if (cat === "all" || card.dataset.category === cat) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
