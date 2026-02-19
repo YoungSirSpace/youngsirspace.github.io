@@ -74,7 +74,7 @@ layout: null
       <div class="glass-box">
         <h2>Recent Posts</h2>
         <ul>
-          {% for post in site.posts limit:5 %}
+          {% for post in site.posts limit:3 %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
