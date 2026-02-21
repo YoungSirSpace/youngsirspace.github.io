@@ -58,6 +58,26 @@
 .profile-name { font-size: 1rem; margin: 0.4rem 0; }
 .profile-desc { font-size: 0.8rem; color: var(--text-dim); }
 
+.links-list { display: flex; gap: 15px; justify-content: center; margin-top: 10px; }
+.links-list p { margin: 0; }
+
+.link-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255,255, 0.08);
+  transition: transform 0.5s ease, background 0.2s ease;
+}
+
+.link-btn img { width: 20px; height: 20px; }
+.link-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(360deg) scale(1.25);
+}
+
 .post-list-box { padding: 28px 24px; }
 .post-list { display: flex; flex-direction: column; gap: 0.9rem; }
 
