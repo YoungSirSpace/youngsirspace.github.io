@@ -62,8 +62,8 @@
 .links-list p { margin: 0; }
 
 .link-btn {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -72,7 +72,7 @@
   transition: transform 0.7s ease, background 0.5s ease;
 }
 
-.link-btn img { width: 32px; height: 32px; }
+.link-btn img { width: 24px; height: 24px; }
 .link-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: rotate(360deg) scale(1.12);
