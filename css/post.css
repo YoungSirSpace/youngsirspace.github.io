@@ -58,7 +58,7 @@
 .profile-name { font-size: 1rem; margin: 0.4rem 0; }
 .profile-desc { font-size: 0.8rem; color: var(--text-dim); }
 
-.links-list { display: flex; gap: 25px; justify-content: center; margin-top: 10px; }
+.links-list { display: flex; gap: 20px; justify-content: center; margin-top: 10px; }
 .links-list p { margin: 0; }
 
 .link-btn {
@@ -75,7 +75,7 @@
 .link-btn img { width: 20px; height: 20px; }
 .link-btn:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: rotate(360deg) scale(1.25);
+  transform: rotate(360deg) scale(1.08);
 }
 
 .post-list-box { padding: 28px 24px; }
