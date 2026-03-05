@@ -11,4 +11,4 @@ After breakfast, we set out for Osaka Castle, home to its famous tenshukaku. The
 
 ![Osaka Castle Park](/post-images/My-Trip-to-Japan/osaka-park.jpg)
 
-The tenshukaku stood gracefully against the blue sky. Just as I was immersed in this beautiful scenery, a man with bowl cut came to me, asking if I could take a picture for them. I nodded and took the phone. The phone's language was Korean, which made the moment rather interesting—a Chinese person taking a photo for a Korean tourist at Japanese landmark. For a brief momenet, the citizens of three countries—bound by a complex history of love, hatred and compromise—stood in a quiet harmony.
+The tenshukaku stood gracefully against the blue sky. Just as I was immersed in this beautiful scenery, a man with bowl cut came to me, asking if I could take a picture for them. I nodded and took the phone. The phone's language was Korean, which made the moment rather interesting—a **Chinese** person taking a photo for a **Korean** tourist at **Japanese** landmark. For a brief momenet, the citizens of three countries—bound by a complex history of love, hatred and compromise—stood in a quiet harmony.
