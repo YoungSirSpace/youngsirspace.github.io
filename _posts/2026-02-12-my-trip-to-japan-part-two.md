@@ -16,3 +16,5 @@ The tenshukaku stood gracefully against the blue sky. Just as I was immersed in 
 When I arrived at the gate beneath the tenshukaku, I found a long queue in front of the ticket machine. Although I could have bought an e-ticket, I decided to wait in line to see whether my newly obtained Visa debit card would work properly.
 
 Around half an hour later, I finally reached the front of the ticket machine. I selected the ticket on the screen and inserted my card, waiting for the payment to go through. To my surprise—but perhaps not entirely unexpectedly—the transaction failed. After all, it was a Visa card issued in Mainland China. It was only about six months later, after I obtained another card—a Mastercard that worked without any problem—that I finally understood what had happened. By then, the same Visa card that had once failed started working normally. In a small way, it made the world feel a little closer and more connected to me.
+
+![Osaka Tenshukaku](/post-images/My-Trip-to-Japan/Tenshukaku.jpg)
