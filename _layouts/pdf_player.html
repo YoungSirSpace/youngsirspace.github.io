@@ -15,12 +15,19 @@ layout: null
 <body>
     <iframe id="pdf-frame" src=""></iframe>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const fileUrl = params.get('file');
-        if (fileUrl) {
-            document.getElementById('pdf-frame').src = fileUrl;
-        }
-    </script>
+<script>
+  window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    let fileUrl = params.get('file');
+    
+    if (fileUrl) {
+      fileUrl = encodeURI(decodeURI(fileUrl)); 
+      console.log("Loading PDF from:", fileUrl); // 可以在浏览器 F12 控制台查看路径是否正确
+      document.getElementById('pdf-frame').src = fileUrl;
+    } else {
+      alert("No PDF file specified!");
+    }
+  };
+</script>
 </body>
 </html>
