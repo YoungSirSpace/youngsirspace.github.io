@@ -2,26 +2,25 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <style>
-    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-    iframe { width: 100%; height: 100%; border: none; }
-  </style>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="icon" href="https://youngsirspace.github.io/favicon.ico">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #333; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
 </head>
 <body>
-  <iframe src="{{ page.pdf_url }}"></iframe>
+    <iframe id="pdf-frame" src=""></iframe>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const fileUrl = params.get('file');
+        if (fileUrl) {
+            document.getElementById('pdf-frame').src = fileUrl;
+        }
+    </script>
 </body>
 </html>
-
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const pdfFile = urlParams.get('file');
-  if (pdfFile) {
-    document.querySelector('iframe').src = pdfFile;
-  }
-</script>
