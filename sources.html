@@ -57,6 +57,11 @@ layout: null
              target="_blank"
              data-category="{{ s.category }}">
 
+          <a class="source-card"
+             href="{{ s.file | default: s.url }}"
+             target="_blank"
+             data-category="{{ s.category }}">
+
             <h3 class="source-title">{{ s.title }}</h3>
 
             <div class="source-meta">
@@ -95,7 +100,7 @@ layout: null
         filters.forEach(x => x.classList.remove("active"));
         f.classList.add("active");
 
-        const cat = f.dataset.filter;
+        const cat = f.dataset.category;
 
         cards.forEach(card => {
           if (cat === "all" || card.dataset.category === cat) {
