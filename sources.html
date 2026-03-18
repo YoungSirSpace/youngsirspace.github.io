@@ -54,7 +54,7 @@ layout: null
           {% for s in site.sources %}
 
           <a class="source-card"
-             href="{{ s.file | default: s.url }}"
+             href="/viewer/?file={{ s.file }}"
              target="_blank"
              data-category="{{ s.category }}">
 
