@@ -17,3 +17,11 @@ layout: null
   <iframe src="{{ page.pdf_url }}"></iframe>
 </body>
 </html>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const pdfFile = urlParams.get('file');
+  if (pdfFile) {
+    document.querySelector('iframe').src = pdfFile;
+  }
+</script>
