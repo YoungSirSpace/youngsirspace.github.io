@@ -52,10 +52,6 @@ layout: null
 
         <div class="sources-grid">
           {% for s in site.sources %}
-          <a class="source-card"
-             href="{{ s.file }}"
-             target="_blank"
-             data-category="{{ s.category }}">
 
           <a class="source-card"
              href="{{ s.file | default: s.url }}"
