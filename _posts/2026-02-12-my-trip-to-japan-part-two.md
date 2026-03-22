@@ -17,6 +17,9 @@ When I arrived at the gate beneath the tenshukaku, I found a long queue in front
 
 Around half an hour later, I finally reached the front of the ticket machine. I selected the ticket on the screen and inserted my card, waiting for the payment to go through. To my surprise—but perhaps not entirely unexpectedly—the transaction failed. After all, it was a Visa card issued in Mainland China. It was only about six months later, after I obtained another card—a Mastercard that worked without any problem—that I finally understood what had happened. By then, after enabling a few settings on my phone, the same Visa card that had once failed started working normally. In a small way, it made the world feel a little closer and more connected to me.
 
-Finally, I entered the tenshukaku, and climbed to the top floor.
+Finally, I entered the tenshukaku and made my way to the top floor.
+
+The entire city of Osaka spread out before me. My gaze stretched into the distance, meeting the mountains that encircled the city. Skyscrapers and low-rise apartments intertwined, composing a harmonious skyline with a distinctly Japanese character.
 
 ![Osaka Tenshukaku](/post-images/My-Trip-to-Japan/Tenshukaku.jpg)
+
