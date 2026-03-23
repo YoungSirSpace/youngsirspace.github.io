@@ -20,7 +20,10 @@
 }
 
 .source-card:hover {
-  transform: translateY(-4px);
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateX(4px);
+  box-shadow: inset 4px 4px 15px rgba(0, 0, 0, 0.15),
+              0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .source-card.hidden {
