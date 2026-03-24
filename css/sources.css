@@ -27,7 +27,8 @@
 }
 
 .source-card.hidden {
-  display: none !important;
+  transform: scale(0.96);
+  pointer-events: none;
 }
 
 .source-meta {
