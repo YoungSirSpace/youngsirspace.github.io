@@ -8,4 +8,4 @@ markdown: CommonMarkGhPages
 
 collections:
   sources:
-    output: false
+    output: true
