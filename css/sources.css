@@ -1,10 +1,3 @@
-.sources-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 24px;
-}
-
 .source-card {
   background: rgba(20, 20, 20, 0.35);
   backdrop-filter: blur(10px);
@@ -27,6 +20,7 @@
 }
 
 .source-card.hidden {
+  display: none;
   transform: scale(0.96);
   pointer-events: none;
 }
@@ -63,9 +57,45 @@
   border-radius: 8px;
 }
 
+/* 修改点 1: 限制整个页面的最大宽度，并居中显示，解决太靠左上的问题 */
 .sources-layout {
   display: grid;
-  grid-template-columns: 240px 1fr 300px;
+  grid-template-columns: 240px 1fr 300px; /* 原有的三栏比例 */
   gap: 24px;
   align-items: start;
+  max-width: 1200px;    /* 限制最大宽度 */
+  margin: 40px auto;    /* 居中，并距离顶部留出空间 */
+  padding: 0 20px;      /* 两侧留点呼吸空间 */
+}
+
+/* 修改点 2: 将多列网格改为单列显示 */
+.sources-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 强制单列，占满可用宽度 */
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* 修改点 3: 添加响应式媒体查询 (针对手机等小屏幕) */
+@media (max-width: 900px) {
+  .sources-layout {
+    display: flex;             /* 窄屏下转为 Flex 布局以便控制上下顺序 */
+    flex-direction: column;    /* 垂直排列 */
+  }
+
+  /* 使用 order 属性重新排序，让中间的资源列表排第一，侧边栏排到下面去 */
+  .sources-list-box {
+    order: 1; 
+    width: 100%;
+  }
+
+  .sources-sidebar {
+    order: 2; /* 左侧的 Categories 移到中间内容的下方 */
+    width: 100%;
+  }
+
+  .sidebar:last-child {
+    order: 3; /* 右侧的用户信息模块移到最下方 */
+    width: 100%;
+  }
 }
