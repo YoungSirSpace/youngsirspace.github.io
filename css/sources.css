@@ -20,9 +20,11 @@
 }
 
 .source-card.hidden {
-  display: none;
-  transform: scale(0.96);
+  opacity: 0;
+  transform: scale(0.9);
+  position: absolute;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .source-meta {
@@ -74,6 +76,8 @@
   grid-template-columns: 1fr; /* 强制单列，占满可用宽度 */
   gap: 24px;
   margin-top: 24px;
+  position: relative; /* 为绝对定位提供基准 */
+  align-items: start;
 }
 
 /* 修改点 3: 添加响应式媒体查询 (针对手机等小屏幕) */
