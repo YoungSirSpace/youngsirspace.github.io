@@ -2,7 +2,9 @@ title: YoungSirSpace
 description: >
   What's past is Prologue.
 baseurl: ""
-url: "https://youngsirspace.github.io"
+url: "https://youngsirspace.net"
+
+permalink: /post/:title/
 
 markdown: CommonMarkGhPages
 
