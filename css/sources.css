@@ -22,11 +22,13 @@
 .source-card.hidden {
   opacity: 0;
   transform: scale(0.9);
-  position: absolute;
+  
+  /* 移除 position: absolute; 避免破坏 Grid 容器的高度计算 */
+  /* 使用 display: none; 彻底让它不占用任何空间和高度 */
+  display: none; 
+  
   pointer-events: none;
-  visibility: hidden;
 }
-
 .source-meta {
   font-size: 0.85rem;
   opacity: 0.7;
