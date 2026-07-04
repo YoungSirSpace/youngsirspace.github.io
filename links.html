@@ -1,0 +1,64 @@
+---
+layout: null
+permalink: /links/
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Links | {{ site.title }}</title>
+  <link rel="icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/background.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/links.css"> 
+  <script src="/javascript/basic_script.js"></script>
+</head>
+
+<body class="home">
+  <div class="bg-fixed"></div>
+
+  {% include header.html %}
+
+  <section class="links-hero"></section>
+
+  <main class="page-layout links-layout">
+    
+    <section class="post-list-box glass-box links-list-box">
+      <div class="post-list">
+        <h2>Links & Friends</h2>
+        <p>Meet some wonderful people here. Light up their cabins.</p>
+
+        <div class="links-grid">
+          {% for friend in site.data.links %}
+          <a class="friend-card" href="{{ friend.url }}" target="_blank" rel="noopener">
+            <div class="friend-avatar-wrap">
+              <img class="friend-avatar" src="{{ friend.avatar }}" alt="{{ friend.name }}" onerror="this.src='/images/default-avatar.png';">
+            </div>
+            <div class="friend-info">
+              <h3 class="friend-name">{{ friend.name }}</h3>
+              <p class="friend-quote" title="{{ friend.quote }}">{{ friend.quote }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
+
+  </main>
+
+  {% include footer.html %}
+
+  <script src="/javascript/header-blur.js"></script>
+</body>
+</html>
