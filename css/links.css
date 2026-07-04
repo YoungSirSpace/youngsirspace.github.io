@@ -17,14 +17,17 @@
 
 /* 3. 左侧大盒子的内衬间距修正 */
 .links-content-container {
-  padding: 40px;
+  padding: 40px !important;
+}
+
+.links-content-container .post-list {
+  padding: 0 10px;
 }
 
 /* 4. 友链卡片网格系统：做成流畅的两列或三列响应式网格 */
 .links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 16px;
+  margin-top: 24px;
+  padding: 4px;
 }
 
 /* 5. 独立卡片：打造成类似于主页 postcard 的独立黑框框质感 */
