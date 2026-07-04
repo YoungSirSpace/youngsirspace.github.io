@@ -16,7 +16,7 @@ permalink: /links/
   <link rel="stylesheet" href="/css/background.css">
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/post.css"> <link rel="stylesheet" href="/css/responsive.css">
   <link rel="stylesheet" href="/css/links.css"> 
   <script src="/javascript/basic_script.js"></script>
 </head>
@@ -28,28 +28,30 @@ permalink: /links/
 
   <section class="links-hero"></section>
 
-  <main class="page-layout links-layout">
+  <main class="page-layout links-main-layout">
     
-    <section class="post-list-box glass-box links-list-box">
-      <div class="post-list">
-        <h2>Links & Friends</h2>
-        <p>Meet some wonderful people here. Light up their cabins.</p>
+    <div class="main-column">
+      <section class="content-box glass-box links-content-container">
+        <div class="post-list">
+          <h2 style="margin-top: 0; font-size: 1.8rem; margin-bottom: 8px;">Links & Friends</h2>
+          <p style="opacity: 0.7; margin-bottom: 32px;">Meet some wonderful people here. Light up their cabins.</p>
 
-        <div class="links-grid">
-          {% for friend in site.data.links %}
-          <a class="friend-card" href="{{ friend.url }}" target="_blank" rel="noopener">
-            <div class="friend-avatar-wrap">
-              <img class="friend-avatar" src="{{ friend.avatar }}" alt="{{ friend.name }}" onerror="this.src='/images/default-avatar.png';">
-            </div>
-            <div class="friend-info">
-              <h3 class="friend-name">{{ friend.name }}</h3>
-              <p class="friend-quote" title="{{ friend.quote }}">{{ friend.quote }}</p>
-            </div>
-          </a>
-          {% endfor %}
+          <div class="links-grid">
+            {% for friend in site.data.links %}
+            <a class="friend-card" href="{{ friend.url }}" target="_blank" rel="noopener">
+              <div class="friend-avatar-wrap">
+                <img class="friend-avatar" src="{{ friend.avatar }}" alt="{{ friend.name }}" onerror="this.src='/images/default-avatar.png';">
+              </div>
+              <div class="friend-info">
+                <h3 class="friend-name">{{ friend.name }}</h3>
+                <p class="friend-quote" title="{{ friend.quote }}">{{ friend.quote }}</p>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <aside class="sidebar">
       {% include sidebar.html %}
