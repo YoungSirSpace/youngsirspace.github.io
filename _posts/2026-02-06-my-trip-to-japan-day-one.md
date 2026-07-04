@@ -20,3 +20,6 @@ Strolling along the Dotonboti River, I was completely immersed in the atmosphere
 I wandered around the Shinsaibashi area aimlessly until eleven. After buying some food and drinks in Lawson, I walked back to my hotel—a compact Japanese apartment. Once inside, I tried many of the small things I had always wanted to do, from drinking tap water from the faucet to watching anime on television. It was pretty funny how something so taken for granted could still make me feel oddly exciting and fresh.
 
 That night, the city gradually grew quiet. The excitement of arrival had not faded, but it had become a deeper and calmer mood. Lying in bed, with the sounds of Osaka fading into the distance, I realized that the journey had truly begun. Tomorrow would come soon.
+
+
+
