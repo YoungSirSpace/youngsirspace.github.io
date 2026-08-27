@@ -19,6 +19,8 @@ Around half an hour later, I finally reached the front of the ticket machine. I 
 
 Finally, I entered the tenshukaku and made my way to the top floor.
 
+<!-- readmore -->
+
 The entire city of Osaka spread out before me. My gaze stretched into the distance, meeting the mountains that encircled the city. Skyscrapers and low-rise apartments intertwined, composing a harmonious skyline with a distinctly Japanese character.
 
 ![Osaka Tenshukaku](/post-images/My-Trip-to-Japan/Tenshukaku.jpg)
